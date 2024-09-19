@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:text="0"
+        android:gravity="end"
+        android:padding="24dp"
+        android:background="#EEEEEE"
+        android:textColor="#000000"/>
+
+    <!-- Bố cục dạng lưới cho các nút -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvExpression"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Các nút của máy tính -->
+        <!-- Hàng 1 -->
+        <Button
+            android:text="C"
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#EEEEEE"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="("
+            android:id="@+id/btnOpenParen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text=")"
+            android:id="@+id/btnCloseParen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="DEL"
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Hàng 2 -->
+        <Button
+            android:text="7"
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="8"
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="9"
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="/"
+            android:id="@+id/btnDivide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Hàng 3 -->
+        <Button
+            android:text="4"
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="5"
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="6"
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="*"
+            android:id="@+id/btnMultiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Hàng 4 -->
+        <Button
+            android:text="1"
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="2"
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="3"
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="-"
+            android:id="@+id/btnSubtract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Hàng 5 -->
+        <Button
+            android:text="0"
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="."
+            android:id="@+id/btnDecimal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="="
+            android:id="@+id/btnEquals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Button
+            android:text="+"
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:background="#959292"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
